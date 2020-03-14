@@ -342,18 +342,21 @@
                     var mobileMargin = 0
                     if (screen.width <= 1100)
                         mobileMargin = 78
-                    var body = $("html, body");
-                    body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
-                        //     // Add hash (#) to URL when done scrolling (default click behavior)
-                        //     // window.location.hash = hash;
-                    });
-                    // $('html, body').animate({
-                    //     scrollTop: $(window).scrollTop
-                    // }, 800, function () {
+                    try {
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top - 30 - mobileMargin
+                        }, 800, function () {
 
-                    //     // Add hash (#) to URL when done scrolling (default click behavior)
-                    //     // window.location.hash = hash;
-                    // });
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            // window.location.hash = hash;
+                        });
+                    } catch{
+                        var body = $("html, body");
+                        body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+                            //     // Add hash (#) to URL when done scrolling (default click behavior)
+                            //     // window.location.hash = hash;
+                        });
+                    }
                 } // End if
             });
         });
