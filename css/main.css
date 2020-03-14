@@ -2174,8 +2174,8 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17);
   .listing-header {
     width: auto;
     max-width: 500px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .masonry__brick {
@@ -2202,8 +2202,8 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17);
 
   .masonry-wrap,
   .listing-header {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .masonry__brick {
@@ -3059,6 +3059,10 @@ body.search-is-visible {
   max-width: 135px;
 }
 
+.logos {
+  margin: 0;
+}
+
 .logos a {
   vertical-align: middle;
 }
@@ -3093,6 +3097,22 @@ body.search-is-visible {
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+
+@media screen and (max-width:400px) {
+  
+  .logos {
+    margin: -15px;
+  }
+
+}
+@media screen and (max-width:1100px) {
+  
+  .logos {
+    margin: -15px;
+    text-align: center;
+  }
+
 }
 
 /* -------------------------------------------------------------------
