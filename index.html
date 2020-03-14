@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>MGTEC</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    var mobileMargin = 0
+                    if (screen.width <= 1100)
+                        mobileMargin = 78
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 30 - mobileMargin
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        // window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    console.log($("#header__menu-toggle"));
+                    $("#header__menu-toggle").trigger("click");
+                    // $("#header__menu-toggle").slideToggle();
+                    event.preventDefault();
+                    var hash = this.hash;
+                } // End if
+            });
+            // $("a").on("click", "li", function () {
+            //     $("#menu-icon").click();
+            //     //or $("#nav").slideToggle();
+            // });
+        });
+    </script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body>
+    <div class="background">
+        <!-- <img src="images/header-background-home.svg" alt="Background" style="size: auto 830px, 100% auto; transform: scale(2);"> -->
+    </div>
+
+    <!-- preloader
+    ================================================== -->
+<!--
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+-->
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo" style="height: 100%;">
+                    <a class="site-logo" href="index.html">
+                        <img class="logo" src="images/logo_nova.svg" alt="Homepage">
+                    </a>
+                </div>
+
+                <a class="header__menu-toggle"><span>Menu</span></a>
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="current"><a href="index.html" title="">Home</a></li>
+                    <!-- <li class="has-children">
+                        <a href="#0" title="">Categories</a>
+                        <ul class="sub-menu">
+                        <li><a href="category.html">Lifestyle</a></li>
+                        <li><a href="category.html">Health</a></li>
+                        <li><a href="category.html">Family</a></li>
+                        <li><a href="category.html">Management</a></li>
+                        <li><a href="category.html">Travel</a></li>
+                        <li><a href="category.html">Work</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="has-children">
+                        <a href="#0" title="">Blog Posts</a>
+                        <ul class="sub-menu">
+                        <li><a href="single-video.html">Video Post</a></li>
+                        <li><a href="single-audio.html">Audio Post</a></li>
+                        <li><a href="single-gallery.html">Gallery Post</a></li>
+                        <li><a href="single-standard.html">Standard Post</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="#about" title="">Quem somos</a></li>
+                    <li><a href="" title="">Representantes</a></li>
+                    <li><a href="#activities" title="">Serviços</a></li>
+                    <li><a href="#contact" title="">Fale conosco</a></li>
+                </ul> <!-- end header__nav -->
+
+                <ul class="header__social">
+                    <li class="ss-facebook">
+                        <a href="https://www.facebook.com/mgtecbombas" target="_blank">
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="ss-instagram">
+                        <a href="https://www.instagram.com/mgtecbombas/" target="_blank">
+                            <span class="screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="ss-whatsapp">
+                        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5521964377122" target="_blank">
+                            <span class="screen-reader-text">Whatsapp</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav> <!-- end header__nav-wrap -->
+
+
+
+        </header> <!-- end s-header -->
+
+        <div class="s-content">
+
+            <div class="masonry-wrap">
+
+                <div class="masonry">
+
+                    <div class="grid-sizer"></div>
+
+                    <article class="masonry__brick entry format-standard animate-this">
+
+                        <div class="entry__thumb">
+                            <a class="entry__thumb-link">
+                                <img src="images/thumbs/masonry/woodcraft-600.jpg" class="entry__thumb-image"
+                                    srcset="http://www.mgtecbombas.com.br/img/bg-top.jpg 1x, http://www.mgtecbombas.com.br/img/bg-top.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                    </article> <!-- end article -->
+
+                    <article class="masonry__brick entry format-quote animate-this">
+
+                        <div class="entry__thumb">
+                            <blockquote>
+                                <p>
+                                    Empresa especializada em manuntenções de <b>Motores Elétricos</b>, <b>Bombas
+                                        D'água</b>, <b>Máquinas</b> e <b>Equipamentos</b>.</p>
+
+                            </blockquote>
+                        </div>
+
+                    </article> <!-- end article -->
+
+                    <article id="about" class="masonry__brick entry format-standard animate-this">
+
+                        <!-- <div class="entry__thumb">
+                            <a class="entry__thumb-link">
+                                <img src="images/thumbs/masonry/woodcraft-600.jpg" class="entry__thumb-image"
+                                        srcset="http://www.mgtecbombas.com.br/img/bg-top.jpg 1x, http://www.mgtecbombas.com.br/img/bg-top.jpg 2x" alt="">
+                            </a>
+                        </div> -->
+
+                        <div class="entry__text">
+                            <div class="entry__header">
+
+                                <h2 class="entry__title"><a>QUEM SOMOS</a></h2>
+                                <!-- <div class="entry__meta">
+                                    <span class="entry__meta-cat">
+                                        <a href="category.html">Design</a> 
+                                        <a href="category.html">Photography</a>
+                                    </span>
+                                    <span class="entry__meta-date">
+                                        <a href="single-standard.html">Apr 29, 2019</a>
+                                    </span>
+                                </div> -->
+
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    A MGTEC está constituída no mercado desde 2012, vêm ganhando espaço no meio de
+                                    grandes competidores. Sua especialidade esteve sempre voltada para a manutenção de
+                                    equipamentos, quadros elétricos, motores elétricos, bombas d’água, instalações,
+                                    soluções para diversos tipos de problemas. Em toda a sua existência a MGTEC tem por
+                                    filosofia estar sempre voltada ao bom atendimento e suprir as necessidades de seus
+                                    clientes.<br><br>
+
+                                    Contamos com uma equipe técnica e mão de obra preparada para oferecer soluções
+                                    compatíveis com exigências de nossos clientes e parceiros. A MGTEC coloca à sua
+                                    disposição o seu departamento de vendas, técnico, comercial, para prestar-lhes
+                                    apoio, tanto sob o ponto e vista técnico como comercial, que venha ser necessário.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article> <!-- end article -->
+
+                    <article id="activities" class="masonry__brick entry format-standard animate-this">
+
+
+                        <div class="entry__text">
+                            <div class="entry__header">
+
+                                <h2 class="entry__title"><a>NOSSAS ATIVIDADES</a></h2>
+
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    <b>•</b> ENROLAMENTO DE MOTORES ELÉTRICOS;<br>
+                                    <b>•</b> MANUTENÇÕES PREVENTIVAS/CORRETIVAS: MOTORES ELÉTRICOS;<br>
+                                    <b>•</b> BOMBAS D'ÁGUA;<br>
+                                    <b>•</b> MAQUINAS E EQUIPAMENTOS;<br>
+                                    <b>•</b> QUADROS E PAINÉIS ELÉTRICOS;<br>
+                                    <b>•</b> PROJETO E MONTAGEM DE QUADROS/PAINÉIS ELÉTRICOS SOB MEDIDA;<br>
+                                    <b>•</b> PROJETO E MONTAGEM DE SUBESTAÇÕES;<br>
+                                    <b>•</b> INSTALAÇÕES ELÉTRICAS BAIXA/MÉDIA/ALTA TENSÃO;<br>
+                                    <b>•</b> INSTALAÇÕES HIDRÁULICAS;<br>
+                                    <b>•</b> CONTRATOS DE MANUTENÇÃO PREVENTIVA/CORRETIVA;<br>
+                                    <b>•</b> AUTOMAÇÃO INDUSTRIAL / PROJETOS ESPECIAIS;
+                                </p>
+                            </div>
+                        </div>
+
+                    </article> <!-- end article -->
+
+                    <article id="contact" class="masonry__brick entry format-standard animate-this">
+
+
+                        <div class="entry__text">
+                            <div class="entry__header">
+
+                                <h2 class="entry__title"><a>FALE CONOSCO</a></h2>
+
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    comercial@mgtecbombas.com.br<br>
+                                    55 + 21 + 2691-7188<br>
+                                    55 + 21 + 96409-9947<br>
+                                    55 + 21 + 96952-6705<br><br>
+
+                                    END.: EST. ANTÔNIO JOSÉ BITTENCOURT, N° 841 – LOJA – NOVA CIDADE – NILÓPOLIS – RJ –
+                                    CEP: 26535-000
+                                </p>
+                                <br>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.047202418413!2d-43.41420278503635!3d-22.800714785065804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9966af2f40150b%3A0x2c09deb3457a4292!2sR.+Ant%C3%B4nio+Jos%C3%A9+Bitencourt%2C+841+-+Centro%2C+Nil%C3%B3polis+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1480689903325"
+                                    width="100%" height="250" frameborder="0" style="border:0"
+                                    allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+
+                    </article> <!-- end article -->
+                </div> <!-- end masonry -->
+
+            </div> <!-- end masonry-wrap -->
+
+        </div> <!-- end s-content -->
+
+
+        <!-- footer
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <!-- <span>© Copyright MGTEC Bombas 2020</span> -->
+                        <span>Site desenvolvido pelo web designer: <a href="https://www.linkedin.com/in/guilherme-galletti-291450124"
+                                target="_blank">Faga</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
