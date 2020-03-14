@@ -288,7 +288,7 @@
         // ssPreloader();
         // ssPrettyPrint();
         // ssSearch();
-        // ssMenu();
+        ssMenu();
         // ssMasonryFolio();
         ssBricksAnimate();
         // ssSlickSlider();
