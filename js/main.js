@@ -235,7 +235,7 @@
             e.stopPropagation();
 
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
+                'scrollTop': $(window).scrollTop
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 
                 // check if menu is open
@@ -285,15 +285,15 @@
      * ------------------------------------------------------ */
     (function clInit() {
 
-        ssPreloader();
-        ssPrettyPrint();
-        ssSearch();
-        ssMenu();
-        ssMasonryFolio();
+        // ssPreloader();
+        // ssPrettyPrint();
+        // ssSearch();
+        // ssMenu();
+        // ssMasonryFolio();
         ssBricksAnimate();
-        ssSlickSlider();
-        ssSmoothScroll();
-        ssAlertBoxes();
+        // ssSlickSlider();
+        // ssSmoothScroll();
+        // ssAlertBoxes();
         ssBackToTop();
 
     })();

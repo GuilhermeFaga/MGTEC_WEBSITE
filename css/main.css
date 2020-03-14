@@ -1578,7 +1578,7 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## animation stuff 
  * ------------------------------------------------------------------- */
-.animate-this {
+/* .animate-this {
   opacity: 0;
   visibility: hidden;
 }
@@ -1603,8 +1603,8 @@ input::-moz-focus-inner {
   from {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate3d(0, 150%, 0);
-    transform: translate3d(0, 150%, 0);
+    -webkit-transform: translate3d(0, 15%, 0);
+    transform: translate3d(0, 15%, 0);
   }
 
   to {
@@ -1620,8 +1620,8 @@ input::-moz-focus-inner {
   from {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate3d(0, 150%, 0);
-    transform: translate3d(0, 150%, 0);
+    -webkit-transform: translate3d(0, 15%, 0);
+    transform: translate3d(0, 15%, 0);
   }
 
   to {
@@ -1631,7 +1631,7 @@ input::-moz-focus-inner {
     transform: translate3d(0, 0, 0);
   }
 
-}
+} */
 
 /* -------------------------------------------------------------------
  * ## entry media
@@ -3028,7 +3028,7 @@ body.search-is-visible {
 .s-content,
 .s-footer {
   padding-left: 330px;
-  padding-right: 100px;
+  padding-right: 30px;
   max-width: 2140px;
 }
 
@@ -3052,6 +3052,47 @@ body.search-is-visible {
 .content__page-header {
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.logos .container {
+  max-height: 50px;
+  max-width: 135px;
+}
+
+.logos a {
+  vertical-align: middle;
+}
+
+.logos img {
+	margin-top: 2px;
+  margin-bottom: 2px;
+  height: 50px;
+  width: 135px;
+  max-height: 50px;
+  max-width: 135px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 1s all;
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-right: 1px;
+  border: 7px solid transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.27);
+  box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.27);
+  object-fit: scale-down;
+}
+
+.logos img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /* -------------------------------------------------------------------
