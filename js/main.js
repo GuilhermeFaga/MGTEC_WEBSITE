@@ -294,7 +294,7 @@
         // ssSlickSlider();
         // ssSmoothScroll();
         // ssAlertBoxes();
-        ssBackToTop();
+        // ssBackToTop();
 
     })();
 
