@@ -198,7 +198,11 @@ margin-left: auto;
 }
 
 .feature-block h2 {
-  margin-top: 3rem;
+  margin-top: 1rem;
+}
+
+.feature-block .img-container{
+  text-align: center;
 }
 
 @media screen and (max-width:850px) {
@@ -216,10 +220,6 @@ margin-left: auto;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  }
-
-  .feature-block .img-container{
-    text-align: center;
   }
 }
 
