@@ -278,7 +278,6 @@ a:active {
   content: "";
   color: #ffffff00;
   margin-right: 5px;
-  background
 }
 
 .btn_orcamento:hover {
@@ -2215,10 +2214,6 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17); */
   border: none;
 }
 
-.format-quote .entry__thumb::before {
-  /* background-image: url(../images/icons/icon-quote.svg); */
-}
-
 .format-link .entry__thumb::before {
   background-image: url(../images/icons/icon-link.svg);
 }
@@ -2295,9 +2290,6 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17); */
  * common and reusable styles
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1800px) {
-  .masonry-wrap {
-    /* max-width: 1260px; */
-  }
 
   .listing-header {
     padding: 0 1.6vw 2.4rem;
@@ -2346,9 +2338,6 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17); */
 }
 
 @media screen and (max-width:1500px) {
-  .masonry-wrap {
-    /* max-width: 900px; */
-  }
 
   .listing-header {
     padding: 0 1.8vw 2.4rem;
@@ -2390,10 +2379,6 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17); */
 @media screen and (max-width:800px) {
   .display-1 {
     font-size: 4.6rem;
-  }
-
-  .masonry-wrap {
-    /* max-width: 580px; */
   }
 
   .listing-header {
@@ -2823,6 +2808,12 @@ box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.17); */
 
 .header__social .ss-whatsapp a::after {
   background-image: url(../images/icons/social/icon-whatsapp.svg);
+  height: 50%;
+  width: 50%;
+}
+
+.header__social .ss-youtube a::after {
+  background-image: url(../images/icons/social/icon-youtube.svg);
   height: 50%;
   width: 50%;
 }
